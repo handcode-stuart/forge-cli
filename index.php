@@ -23,6 +23,16 @@ switch ($action) {
     include(__DIR__.'/jobs/list.php');
     break;
 
+    case 'installGit':
+    case '-ig':
+    include(__DIR__.'/jobs/installGit.php');
+    break;
+
+    case 'site':
+    case '-s':
+    include(__DIR__.'/jobs/siteInfo.php');
+    break;
+
     case 'rebootNginx':
     case '-rn':
     include(__DIR__.'/jobs/rebootNginx.php');
