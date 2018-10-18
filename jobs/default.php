@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 1. Welcome
+ * 1. Welcome to the Forge CLI
  * 2. List sites
  * 3. Create sites
  * 4. Delete sites
@@ -11,13 +11,16 @@
  * 8. Deploy site
  */
 
+/**
+ * Store message
+ */
 $message = '';
 
 
 /**
  * 1. Welcome
  */
-$message .= '1. Welcome to the Forge CLI.' . PHP_EOL;
+$message .= '--- 1. Welcome to the Forge CLI ---' . PHP_EOL;
 $message .= 'You can enter any of the following commands:' . PHP_EOL . PHP_EOL . PHP_EOL . PHP_EOL;
 
 
@@ -81,7 +84,7 @@ $message .= '   Usage: deploy SITE_ID' . PHP_EOL . PHP_EOL . PHP_EOL . PHP_EOL;
  * Index
  */
 $message .= '--- Index ---
-1. Welcome
+1. Welcome to the Forge CLI
 2. List sites
 3. Create sites
 4. Delete sites

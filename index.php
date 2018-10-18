@@ -1,13 +1,26 @@
 <?php
 
+/**
+ * Require autoload once
+ */
 require_once(__DIR__ . '/vendor/autoload.php');
+
+/**
+ * Set up dotenv so we can use .env file
+ */
 (new \Dotenv\Dotenv(__DIR__))->load();
 
+/**
+ * Initiate forge
+ */
 $forge = new Themsaid\Forge\Forge(getenv('API_KEY'));
 
-$action = $argv[1];
+/**
+ * Collect users intended job
+ */
+$job = $argv[1];
 
-switch ($action) {
+switch ($job) {
     case 'create':
     case '-c':
     include(__DIR__.'/jobs/create.php');
