@@ -8,6 +8,7 @@
  * 5. Reboot Nginx
  * 6. Install Git repository on site
  * 7. Site info
+ * 8. Deploy site
  */
 
 $message = '';
@@ -70,6 +71,13 @@ $message .= '   Usage: site SITE_ID' . PHP_EOL . PHP_EOL . PHP_EOL . PHP_EOL;
 
 
 /**
+ * 8. Deploy site
+ */
+$message .= '--- 8. Deploy site ---' . PHP_EOL;
+$message .= '   Usage: deploy SITE_ID' . PHP_EOL . PHP_EOL . PHP_EOL . PHP_EOL;
+
+
+/**
  * Index
  */
 $message .= '--- Index ---
@@ -80,6 +88,7 @@ $message .= '--- Index ---
 5. Reboot Nginx
 6. Install Git repository on site
 7. Site info
+8. Deploy site
 ';
 
 echo $message;

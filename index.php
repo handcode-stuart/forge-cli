@@ -33,6 +33,11 @@ switch ($action) {
     include(__DIR__.'/jobs/siteInfo.php');
     break;
 
+    case 'deploy':
+    case '-p':
+    include(__DIR__.'/jobs/deploySite.php');
+    break;
+
     case 'rebootNginx':
     case '-rn':
     include(__DIR__.'/jobs/rebootNginx.php');
